@@ -1,0 +1,518 @@
+/* Estilos específicos para la página de facturación */
+
+.btn-back {
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background: #5f3dc4;
+  transform: translateY(-2px);
+}
+
+.billing-container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section {
+  background: white;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #4facfe;
+}
+
+.section h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4facfe;
+  box-shadow: 0 0 10px rgba(79, 172, 254, 0.2);
+}
+
+.btn-search {
+  background: #4facfe;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-search:hover {
+  background: #3498db;
+}
+
+.client-info {
+  background: #e8f5e8;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #27ae60;
+  margin-top: 15px;
+}
+
+.client-found h3 {
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+
+.client-found p {
+  margin: 5px 0;
+  color: #2c3e50;
+}
+
+.register-form {
+  background: #fff3cd;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ffc107;
+  margin-top: 15px;
+}
+
+.register-form h3 {
+  color: #856404;
+  margin-bottom: 15px;
+}
+
+.btn-register {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+  background: #218838;
+}
+
+.selected-numbers-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  min-height: 60px;
+  border: 2px dashed #dee2e6;
+}
+
+.number-badge {
+  background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.numbers-summary {
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #2196f3;
+}
+
+.numbers-summary p {
+  margin: 5px 0;
+  color: #1565c0;
+}
+
+.total-amount {
+  font-size: 1.2rem;
+  color: #0d47a1 !important;
+}
+
+.payment-methods,
+.payment-type {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.payment-option:hover {
+  border-color: #4facfe;
+  background: #f0f8ff;
+}
+
+.payment-option input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.payment-option input[type="radio"]:checked + span {
+  color: #4facfe;
+  font-weight: bold;
+}
+
+.payment-option span {
+  font-size: 1rem;
+}
+
+.credit-info {
+  background: #fff3e0;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ff9800;
+  margin-top: 15px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 2px solid #dee2e6;
+  transition: all 0.3s ease;
+}
+
+.checkbox-label:hover {
+  border-color: #4facfe;
+  background: #f0f8ff;
+}
+
+.checkbox-label input[type="checkbox"] {
+  transform: scale(1.3);
+  margin-top: 2px;
+}
+
+.help-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.actions-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.btn-generate {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-generate:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+}
+
+.btn-generate:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-cancel {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(220, 53, 69, 0.4);
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 2px solid #eee;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.receipt-content {
+  padding: 25px;
+  line-height: 1.6;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px 25px;
+  border-top: 2px solid #eee;
+  background: #f8f9fa;
+  border-radius: 0 0 15px 15px;
+}
+
+.btn-print,
+.btn-download,
+.btn-new-sale {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-print {
+  background: #17a2b8;
+  color: white;
+}
+
+.btn-download {
+  background: #6f42c1;
+  color: white;
+}
+
+.btn-new-sale {
+  background: #28a745;
+  color: white;
+}
+
+.btn-print:hover,
+.btn-download:hover,
+.btn-new-sale:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Receipt Styles */
+.receipt {
+  font-family: "Courier New", monospace;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.receipt-header {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.receipt-header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.receipt-section {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.receipt-section:last-child {
+  border-bottom: none;
+}
+
+.receipt-section h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.receipt-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.receipt-number {
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.receipt-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .billing-container {
+    padding: 15px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-methods,
+  .payment-type {
+    grid-template-columns: 1fr;
+  }
+
+  .actions-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-generate,
+  .btn-cancel {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 10px;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+}
