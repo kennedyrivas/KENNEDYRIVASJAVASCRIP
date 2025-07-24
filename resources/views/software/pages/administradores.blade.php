@@ -204,5 +204,5 @@
             },
         });
     </script>
-    <script src="{{ asset('modujs/administradores.js') }}"></script>
+     <script src="{{ asset('Modujs/administradores.js') }}"></script>
 @endpush
